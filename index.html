@@ -2,8 +2,8 @@
 <html lang="ja">
 <head>
     <meta charset="UTF-8">
-    <title>ウィーヌの公式サイト</title>
-    <link rel="icon" href="favicon.png">
+    <title>ウィーヌサイト</title>
+    <link rel="icon" href="otameshi.png">
     <style>
         /* 全体の設定 */
         html {
@@ -66,7 +66,18 @@
             gap: 20px;
             padding-top: 20px;
         }
-
+        button {
+            font-size: 16px;
+            padding: 10px 20px;
+            margin: 5px;
+            background-color: #0288d1;
+            color: white;
+            border: none;
+            border-radius: 20px;
+            cursor: pointer;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            transition: 0.2s;
+        }
         /* ゲームカードのデザイン（角丸・影付き） */
         .game-card {
             background: white;
@@ -99,6 +110,7 @@
             font-weight: bold;
             font-size: 18px;
         }
+
     </style>
 </head>
 <body>
@@ -118,7 +130,7 @@
     <main>
         <!-- ホーム画面エリア -->
         <section id="home" style="text-align: center;">
-            <h1 style="font-size: 40px; margin-top: 50px;">ようこそ！ウィーヌの公式サイトへ</h1>
+            <h1 style="font-size: 40px; margin-top: 50px;">ようこそ！ウィーヌサイトへ</h1>
             <p style="font-size: 20px;">
                 ここでは、私のプロフィールや過去に作ったゲーム作品を公開しています。<br>
                 上のメニューをクリックすると、それぞれの場所に移動します。
@@ -135,24 +147,20 @@
             </div>
         </section>
 
-        <!-- 過去のゲーム作品エリア -->
-        <section id="games">
-            <h2>🕹️ 過去のゲーム作品</h2>
-            <p>今まで作ったゲームです。四角いカードをクリックするとゲーム画面に飛んで遊べるよ！</p>
-            
-            <div class="grid-container">
-                <!-- 1つ目のゲーム作品（WinuGame） -->
-                <a href="https://winu-u0304.github.io/WinuGame/WinuGame.html" target="_blank" class="game-card">
-                    <!-- 画像が用意できたら src="..." の中を書き換えてください -->
-                    <img src="small.png" alt="WinuGame" class="game-image">
-                    <div class="game-title">WinuGame</div>
-                </a>
+       <!-- 過去のゲーム作品エリア（続き） -->
+        </section>
 
-                <!-- ★今後ゲームを増やす時は、上の <a href="..."> 〜 </a> をコピーして、この下に貼り付けるだけ！★ -->
-                
+        <!-- 注意書き・連絡エリア -->
+        <section id="chuuigaki" style="text-align: center; margin-top: 40px; padding-bottom: 50px;">
+            <div class="profile-card" style="display: inline-block; text-align: left; max-width: 600px; width: 90%;">
+                <h4 style="margin-top: 0; color: #d32f2f;">※バグなどを発見した場合は、次のボタンでお知らせください。</h4>
+                <div style="text-align: center; margin-top: 15px;">
+                    <!-- contact.html に飛ぶように設定 -->
+                    <a href="contact.html" style="text-decoration: none;">
+                        <button id="renraku-chuui" style="background-color: #d32f2f; margin: 0;">バグを報告する・連絡する</button>
+                    </a>
+                </div>
             </div>
         </section>
+        
     </main>
-
-</body>
-</html>
