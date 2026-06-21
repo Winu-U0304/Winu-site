@@ -66,6 +66,7 @@
             gap: 20px;
             padding-top: 20px;
         }
+
         button {
             font-size: 16px;
             padding: 10px 20px;
@@ -78,6 +79,10 @@
             box-shadow: 0 4px 6px rgba(0,0,0,0.1);
             transition: 0.2s;
         }
+        button:hover {
+            opacity: 0.8;
+        }
+
         /* ゲームカードのデザイン（角丸・影付き） */
         .game-card {
             background: white;
@@ -147,7 +152,21 @@
             </div>
         </section>
 
-       <!-- 過去のゲーム作品エリア（続き） -->
+        <!-- 過去のゲーム作品エリア -->
+        <section id="games">
+            <h2>🕹️ 過去のゲーム作品</h2>
+            <p>今まで作ったゲームです。クリックするとゲーム画面に飛び、遊ぶことができます。</p>
+            
+            <div class="grid-container">
+                <!-- 1つ目のゲーム作品（WinuGame） -->
+                <a href="https://winu-u0304.github.io/WinuGame/WinuGame.html" target="_blank" class="game-card">
+                    <!-- 画像が用意できたら src="..." の中を書き換えてください -->
+                    <img src="small.png" alt="WinuGame" class="game-image">
+                    <div class="game-title">WinuGame</div>
+                </a>
+
+                <!-- ★今後ゲームを増やす時は、上の <a href="..."> 〜 </a> をコピーして、この下に貼り付けるだけ！★ -->
+            </div>
         </section>
 
         <!-- 注意書き・連絡エリア -->
@@ -164,3 +183,6 @@
         </section>
         
     </main>
+
+</body>
+</html>
