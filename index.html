@@ -99,24 +99,41 @@
             font-weight: bold;
             font-size: 18px;
         }
+
+        /* ★新しく追加した：バグ報告ボタンのデザイン */
+        .contact-button {
+            display: inline-block;
+            background-color: #c93a3a; /* フォームのヘッダーに合わせた赤色 */
+            color: white;
+            text-decoration: none;
+            padding: 15px 35px;
+            font-size: 18px;
+            font-weight: bold;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            transition: background-color 0.2s, transform 0.2s;
+            margin-top: 15px;
+        }
+
+        .contact-button:hover {
+            background-color: #b23232;
+            transform: translateY(-2px);
+        }
     </style>
 </head>
 <body>
 
-    <!-- ヘッダー -->
     <header>
-        <!-- 左側：タイトル -->
         <div style="font-size: 40px; color: gold; padding: 10px 20px; font-weight: bold;">ウィーヌ</div>
-        <!-- 右側：メニューボタン -->
         <nav style="padding-right: 20px;">
             <a href="#home" style="color: white; text-decoration: none; margin-left: 20px; font-size: 20px;">ホーム</a>
             <a href="#profile" style="color: white; text-decoration: none; margin-left: 20px; font-size: 20px;">プロフィール</a>
             <a href="#games" style="color: white; text-decoration: none; margin-left: 20px; font-size: 20px;">ゲーム作品</a>
+            <a href="#contact" style="color: white; text-decoration: none; margin-left: 20px; font-size: 20px;">バグ報告・連絡</a>
         </nav>
     </header>
 
     <main>
-        <!-- ホーム画面エリア -->
         <section id="home" style="text-align: center;">
             <h1 style="font-size: 40px; margin-top: 50px;">ようこそ！ウィーヌの公式サイトへ</h1>
             <p style="font-size: 20px;">
@@ -125,7 +142,6 @@
             </p>
         </section>
 
-        <!-- プロフィール画面エリア -->
         <section id="profile">
             <h2>プロフィール</h2>
             <div class="profile-card">
@@ -135,22 +151,28 @@
             </div>
         </section>
 
-        <!-- 過去のゲーム作品エリア -->
         <section id="games">
             <h2>🕹️ 過去のゲーム作品</h2>
             <p>今まで作ったゲームです。四角いカードをクリックするとゲーム画面に飛んで遊べるよ！</p>
             
             <div class="grid-container">
-                <!-- 1つ目のゲーム作品（WinuGame） -->
                 <a href="https://winu-u0304.github.io/WinuGame/WinuGame.html" target="_blank" class="game-card">
-                    <!-- 画像が用意できたら src="..." の中を書き換えてください -->
                     <img src="small.png" alt="WinuGame" class="game-image">
                     <div class="game-title">WinuGame</div>
                 </a>
 
-                <!-- ★今後ゲームを増やす時は、上の <a href="..."> 〜 </a> をコピーして、この下に貼り付けるだけ！★ -->
-                
-            </div>
+                </div>
+        </section>
+
+        <section id="contact" style="text-align: center;">
+            <h2>💬 バグ報告・メッセージ</h2>
+            <p style="font-size: 18px; line-height: 1.6; margin-top: 20px;">
+                ゲームで見つけたバグや、感想・メッセージなどがあれば、<br>
+                下記の専用フォームからお気軽に教えてください！
+            </p>
+            <a href="https://winu-u0304.github.io/contact_winu-page/contact_winu-page.html" target="_blank" class="contact-button">
+                フォームを開いて送信する
+            </a>
         </section>
     </main>
 
